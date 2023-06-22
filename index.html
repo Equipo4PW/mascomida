@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascó Mida - Inicio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+
+    <script type="text/javascript">
+      function sendEmail() {
+          Email.send({
+                  Host: "smtp.elasticemail.com",
+                  Username: "pablorm538@gmail.com",
+                  Password: "92A64505AB79CA43F57365D82DDEEA6E69DB",
+                  To: 'pablorm538@gmail.com',
+                  From: "pablorm538@gmail.com",
+                  Subject: "holis",
+                  Body: "Well that was easy!!",
+              })
+              .then(function (message) {
+                  alert("mail sent successfully")
+              });
+      }
+  </script>
+    
+    
+</head>
+
+<body>
+
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgb(255, 250, 205);" id="mainNavbar>
+        <header class= "container-fluid">
+            
+            <a>
+            <img class="logo" src="https://www.zarla.com/images/zarla-msco-mida-1x1-2400x2400-20220329-7c6yxxf7j94vvg4cqqhd.png?crop=1:1,smart&width=250&dpr=2" height="100px" width="100px"\ id="navbarTogglerButton">
+            </a>
+
+
+            <!-- Botón que hace el menú hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="background-color: rgb(255, 250, 205);">
+              <span class="navbar-toggler-icon" style="background-color: rgb(178, 34, 34);"></span>
+            </button>
+
+
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link nav justify-content-right" style="color: rgba(0, 0, 0);" href="breakfast.html">Breakfast</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav" style="color: rgb(0, 0, 0);" href="#">Meal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav" style="color: rgb(0, 0, 0);" href="#">Dinner</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav" style="color: rgb(0, 0, 0);" href="#">Dessert</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav" style="color: rgb(0, 0, 0);" href="#">A-Z</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav" style="color: rgb(0, 0, 0);" href="#">Ingredients</a>
+                  </li>
+                  <li class="Ran">
+                    <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: rgb(178, 34, 34);"
+                     id="Random" >Random</button>
+                  </li> 
+                </ul>
+            </div>
+
+            
+            </header>
+        </nav>
+
+
+      <br><br><br><br><br><br><br><br>
+
+      <center><h2 class= "fh" id="hungerHeading">Feeling hungry?</h2></center>
+      
+      <center><form class="holis">
+        <input class="h2o rounded-pill" type="text" placeholder="Search for a meal..." style="width: 650px;" id="mealInput">
+        <button type="submit" class="btn rounded-pill w-15 text-white" style="background-color: rgb(178, 34, 34);" id="searchButton">Search</button>
+
+        <div id="mealResults"></div>
+
+      </form> </center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+  <!--Muestra resultados de búsqueda-->
+
+  <div id="meal" class="row-meal"></div>
+  <div id="results"></div>
+
+<div class="row">
+  <div class="col p-3 bg-primary text-white" style="background-color: rgb(255, 250, 205) !important;">
+    <center><figure>
+    <img width="250" height="250" src="https://www.zarla.com/images/zarla-msco-mida-1x1-2400x2400-20220329-7c6yxxf7j94vvg4cqqhd.png?crop=1:1,smart&width=250&dpr=2"  alt="">
+    </figure></center>
+  </div>
+  <div class="col p-3 bg-dark text-white" style="background-color: rgb(255, 250, 205) !important;">
+    <center><h2 class="lemons" style="color: rgb(0, 0, 0);">"If life gives you lemons... Come eat at our restaurant or order at home".</h2><br><br></center>
+    <center><h3 class="fuenteArial" style="color: rgb(0, 0, 0);">Puruandiro center</h3><br><br></center>
+    <center><p class="fuenteArial" style="color: rgb(0, 0, 0);">Doubts about our products and services</p> 
+    <button class="btn rounded-pill w-15 text-white fuenteArial Kursiva"type="submit" href="" onclick="alert('Hello, welcome to Másco mida, I hope that everything is to your liking, below are the numbers with which you can communicate:        4381172338. __ 4381300244. __ 4381257925.')" style="background-color: rgb(178, 34, 34);">Contact us</button></center>
+  </div>
+  <div class="col p-3 bg-primary text-white" style="background-color: rgb(255, 250, 205) !important;">
+    <center><figure>
+      <div class="container mt-3">
+        <Center><h3 style="color: rgb(0, 0, 0);">Hello, welcome to our website:</h3></Center>
+        <li style="color: rgb(0, 0, 0);">María Jennifer López Lemus</li>
+        <li style="color: rgb(0, 0, 0);">Juan Pablo Martínez Ramírez</li>
+        <li style="color: rgb(0, 0, 0);">Grecia Jhoana Martínez Contreras</li>
+        <br>
+
+
+        <!--Aquí se utiliza un Toggle para desplazar la opción de dejar un email por medio de un botón-->
+
+        <Center><p style="color: rgb(0, 0, 0);" id="messageText">Here you can leave me a message of what you think, keep in mind that it will reach our email</p></Center><br>
+
+        <!--<div class="toggle"  onclick="myFunction()" id="toggleButton">-->
+          <button class="btn btn-success toggle" onclick="myFunction()" id="toggleButton" style=" background-color: rgb(178, 34, 34);">Leave a message</button><br><br>
+      <!--</div>-->
+      
+        <div id="myDIV">
+          <article class="formulario">
+            <div class="row">
+
+              <div class="col">
+              <form action="enviar_correo.php" method="POST">
+
+              <!--Campos del formulario para enviar mensaje-->
+              <label for="email" style="color: rgb(0, 0, 0);" id="emailLabel">Email:</label>
+              <input type="email" class="form-control" placeholder="Enter email" name="email" id="email" required><br>
+
+              <label for="nombre" style="color: rgb(0, 0, 0);" id="nameLabel">Name:</label>
+              <input type="text" class="form-control" placeholder="Name" id="nombre" name="nombre" required><br>
+
+              <label for="mensaje" style="color: rgb(0, 0, 0);" id="messageLabel">Message:</label><br>
+              <textarea id="mensaje" class="form-control" name="mensaje" placeholder="Write a message..." required></textarea><br><br>
+
+  
+            </div>
+            </form>
+            <Button style=" background-color: rgb(178, 34, 34);" onclick="alert('Proximamente :3')" id="sendButton"  class="btn round" ed-pill w-15 text-white">Send</Button>
+              
+                </article>
+              </div>  
+        </div>
+        <!--UWU-->
+
+        
+        
+        
+      </div>
+    </figure></center>
+  </div>
+</div>
+</div>
+
+</body> 
+
+<script>
+const paragraphs = document.body.getElementsByTagName("p");
+
+console.log('Colección de nodos: ', paragraphs);
+
+console.log('Primer nodo: ', paragraphs[2]);
+console.log('Segundo nodo: ', paragraphs[3]);
+console.log('Tercer nodo: ', paragraphs[4]);
+
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+</html>
